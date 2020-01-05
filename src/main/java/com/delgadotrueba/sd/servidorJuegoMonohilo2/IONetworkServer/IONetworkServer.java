@@ -36,6 +36,15 @@ public class IONetworkServer extends IONetwork{
 			throw new InvalidCodopException();
 		}
 	}
+	
+	public byte recibir_oid() throws InvalidCodopException {
+		try {
+			byte oid = super.dataInput.readByte();
+			return oid;
+		} catch (IOException e) {
+			throw new InvalidCodopException();
+		}
+	}
 
 	/*********************************************************************************/
 	/** ENVIO DE RESPUESTAS

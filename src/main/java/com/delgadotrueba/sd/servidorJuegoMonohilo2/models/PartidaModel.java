@@ -2,7 +2,7 @@ package com.delgadotrueba.sd.servidorJuegoMonohilo2.models;
 
 import java.util.Random;
 
-public class PartidaModel {
+public class PartidaModel implements IGame {
 	
 	private BoardModel boardModel;
 	private byte puntosJ1;
@@ -16,23 +16,23 @@ public class PartidaModel {
 		this.cartasSeleccionadasJugador2 = 0;
 	}
 	
-	public byte[][] getTiposCartas() {
+	public byte[][] obtenerTiposCartas() {
 		return this.boardModel.getTypeCards();
 	}
 	
-	public int getCartasEmparejadas() {
+	public int obtenerCartasEmparejadas() {
 		return this.boardModel.getMatchedCard();
 	}
 
-	public byte getPuntosJ1() {
+	public byte obtenerPuntosJ1() {
 		return puntosJ1;
 	}
 
-	public byte getPuntosJ2() {
+	public byte obtenerPuntosJ2() {
 		return puntosJ2;
 	}
 
-	public boolean emparejarCartas(int r1, int c1, int r2, int c2) {
+	public boolean matchCardsP1(int r1, int c1, int r2, int c2) {
 		if(!this.boardModel.isCardValid(r1, c1) || !this.boardModel.isCardValid(r2, c2)) {
 			//throw new CardNotValidException();	
 		}
@@ -103,11 +103,11 @@ public class PartidaModel {
 		}
 	}
 	
-	public boolean estaResulto() {
+	public boolean isSolved() {
 		return this.boardModel.isSolved();
 	}
 	
-	public int getCartasSeleccionadasJugador2() {
+	public int obtenerCartasSeleccionadasJ2() {
 		return this.cartasSeleccionadasJugador2;
 	}
 	
@@ -148,5 +148,16 @@ public class PartidaModel {
 		System.out.println("Puntos J1: "+this.puntosJ1);
 		System.out.println("Puntos J2: "+this.puntosJ2);
 		System.out.println("/****************************************************************/");
+	}
+
+	@Override
+	public byte newGame() {
+		return 0;
+	}
+
+	@Override
+	public boolean matchCardsP1(byte r1, byte c1, byte r2, byte c2) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

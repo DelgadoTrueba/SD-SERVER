@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.delgadotrueba.sd.servidorJuegoMonohilo2.AppTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.delgadotrueba.sd.servidorJuegoMonohilo2.AppTest" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\cdelg\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6284299353888615130.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\cdelg\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5626172649238998485.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\cdelg\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\cdelg\AppData\Local\Programs\Python\Python37-32\;C:\Users\cdelg\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_221\bin;;C:\Users\cdelg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cdelg\AppData\Roaming\npm;C:\Program Files\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.delgadotrueba.sd.servidorJuegoMonohilo2.AppTest" name="testApp" time="0.016"/>
+  <testcase classname="com.delgadotrueba.sd.servidorJuegoMonohilo2.AppTest" name="testApp" time="0.005"/>
 </testsuite>

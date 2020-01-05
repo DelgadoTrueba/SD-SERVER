@@ -5,12 +5,18 @@ import java.io.IOException;
 
 public class DTO_Output_NewGame extends DTO_Output {
 
-	public DTO_Output_NewGame(boolean err, Exception excep) {
+	private byte OID;
+	
+	public DTO_Output_NewGame(boolean err, Exception excep, byte OID) {
 		super(err, excep);
+		this.OID = OID;
 	}
 	
 	public void enviarDatosAlCliente(DataOutputStream dataOutput) throws IOException {
 		super.enviarDatosAlCliente(dataOutput);
+		if(!err) {
+			dataOutput.write(this.OID);
+		}
 	}
 
 }

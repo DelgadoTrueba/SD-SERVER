@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
-public class BoardModel {
+public class BoardModel{
 			
 	private static final int FIRST = 0;
 	private static final int SECOND = 1;
